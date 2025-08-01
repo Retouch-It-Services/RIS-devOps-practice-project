@@ -19,9 +19,9 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build a Docker Image
-      run: docker build -t push nannurimanoj17/myfirst_ci_cd_pipeline:latest .
+      run: docker build -t nannurimanoj17/myfirst_ci_cd_pipeline:latest .
 
     - name: Push the image into the Docker hub
-      run: docker push -t push nannurimanoj17/myfirst_ci_cd_pipeline:latest
+      run: docker push nannurimanoj17/myfirst_ci_cd_pipeline:latest
 
         
